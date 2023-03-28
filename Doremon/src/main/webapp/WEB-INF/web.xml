@@ -4,4 +4,34 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>DeleteServlet</servlet-name>
+  	<display-name>DeleteServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.Servlet.DeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Savedata</servlet-name>
+  	<display-name>Savedata</display-name>
+  	<description></description>
+  	<servlet-class>com.Servlet.Savedata</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UpdateData</servlet-name>
+  	<display-name>UpdateData</display-name>
+  	<description></description>
+  	<servlet-class>com.Servlet.UpdateData</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DeleteServlet</servlet-name>
+  	<url-pattern>/DeleteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Savedata</servlet-name>
+  	<url-pattern>/Savedata</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UpdateData</servlet-name>
+  	<url-pattern>/UpdateData</url-pattern>
+  </servlet-mapping>
 </web-app>

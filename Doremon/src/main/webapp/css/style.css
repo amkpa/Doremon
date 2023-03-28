@@ -1,7 +1,33 @@
-.purple{
-	background: #7B1FA2 ;
+.purple {
+	background: #7B1FA2;
 }
-img{
+
+img {
 	height: 600px;
 	object-fit: cover;
+}
+
+footer {
+	font-size: large;
+	margin-top: 2px;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: center;
+	padding: 5px;
+	background-color: #abbaba;
+	color: #000;
+	margin-top: 2px;
+}
+
+.logo {
+	height: 30px;
+	width: 30px;
+}
+
+.logo:hover {
+	transform: scale(1.5)
+}
+
+.text {
+	text-align: center;
 }

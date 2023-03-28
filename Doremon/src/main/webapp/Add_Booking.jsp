@@ -8,33 +8,31 @@
 <%@include file="all_css_js.jsp"%>
 </head>
 <body>
-	<div class="container ">
+	<div class="container-fluid ">
 		<%@include file="navbar.jsp"%>
 
 		<br>
 
-
-
-		<form>
+		<form action="Savedata" method="post">
 			<div class="form-row">
 				<div class="form-group col-md-6">
 					<label for="inputEmail4">First Name</label> <input type="text"
-						class="form-control" id="inputFirstName" placeholder="First Name">
+						class="form-control" id="inputFirstName" placeholder="First Name" name="fname">
 				</div>
 				<div class="form-group col-md-6">
 					<label for="inputEmail4">Last Name</label> <input type="text"
-						class="form-control" id="inputLastName" placeholder="Last Name">
+						class="form-control" id="inputLastName" placeholder="Last Name" name="lname">
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="form-group col w-50">
 					<label for="inputAddress2">Phone</label> <input type="tel"
-						class="form-control" id="inputPhone" placeholder="Phone Number">
+						class="form-control" id="inputPhone" placeholder="Phone Number" name="phone">
 				</div>
 				<div class="form-group col w-50">
 					<label for="inputEmail4">Email</label> <input type="email"
-						class="form-control" id="inputEmail" placeholder="Email">
+						class="form-control" id="inputEmail" placeholder="Email" name="email">
 				</div>
 
 			</div>
@@ -42,22 +40,22 @@
 			<div class="form-group">
 				<label for="inputAddress">Address</label> <input type="text"
 					class="form-control" id="inputAddress"
-					placeholder="1234 Main St,Apartment, studio, or floor">
+					placeholder="1234 Main St,Apartment, studio, or floor" name="address">
 			</div>
 
 			<div class="form-row align-items-center">
 				<div class="col-auto my-1">
 					<label class="mr-sm-2" for="inlineFormCustomSelect">Location</label>
-					<select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+					<select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="selectin">
 						<option selected>Choose...</option>
-						<option value="1">Marathali</option>
+						<option value="1">Bengaluru</option>
 						<option value="2">Jaipur</option>
-						<option value="3">Cuttack</option>
+						<option value="3">Darjeeling</option>
 					</select>
 				</div>
 				<div class="container w-50">
 					<label for="inputText">Drone Shot</label> <select name="shots"
-						id="droneshots" multiple >
+						id="droneshots" multiple>
 						<option value="1">Spinning elevation shot</option>
 						<option value="2">Half moon bay shot</option>
 						<option value="3">Object shot</option>
